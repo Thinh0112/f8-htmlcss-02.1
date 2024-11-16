@@ -403,7 +403,6 @@ a {
   margin: 0 auto;
   padding: 18px 25px 11px;
   width: 325px;
-  /* height: 195px; */
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
@@ -417,7 +416,8 @@ a {
   line-height: normal;
 }
 
-.course-info .course-fee {
+.course-info .course-fee,
+.testimonial-left p {
   color: #767e7e;
   font-size: 1.6rem;
   font-weight: 400;
@@ -455,6 +455,7 @@ a {
   background-color: var(--primary-color);
 }
 
+/* ----------Statistics---------- */
 .statistics {
   padding: 389px 0 264px;
 }
@@ -475,4 +476,128 @@ a {
   line-height: normal;
   margin-bottom: 0;
   text-align: center;
+}
+
+/* ----------Testimonial---------- */
+.testimonial .body {
+  display: flex;
+}
+
+.testimonial-left {
+  width: 35.81%;
+  margin-right: 72px;
+  padding-top: 37px;
+}
+
+.testimonial-left .quote {
+  margin-bottom: 27px;
+}
+
+.testimonial-left blockquote {
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  margin-bottom: 33px;
+}
+
+.testimonial-left p {
+  margin-bottom: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-left p::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: #070707;
+  margin-right: 5px;
+}
+
+.testimonial-left strong {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.testimonial-right {
+  width: 58.03%;
+  height: 481px;
+  position: relative;
+}
+
+.testimonial-right .face-1,
+.testimonial-right .face-3,
+.testimonial-right .face-6 {
+  width: 78px;
+  height: 78px;
+}
+
+.testimonial-right .face-1 {
+  left: 0;
+  bottom: 145px;
+}
+.testimonial-right .face-2 {
+  width: 92px;
+  height: 92px;
+  top: 0;
+  left: 144px;
+}
+
+.testimonial-right .face-3 {
+  bottom: 0;
+  left: 212px;
+}
+
+.testimonial-right .face-4 {
+  width: 235px;
+  height: 235px;
+  top: 107px;
+  left: 273px;
+}
+
+.testimonial-right .face-5 {
+  width: 110px;
+  height: 110px;
+  top: 19px;
+  right: 0;
+}
+
+.testimonial-right .face-6 {
+  bottom: 29px;
+  right: 32px;
+}
+
+.testimonial-right .face-1,
+.testimonial-right .face-2,
+.testimonial-right .face-3,
+.testimonial-right .face-4,
+.testimonial-right .face-5,
+.testimonial-right .face-6 {
+  position: absolute;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+/* ----------CTA---------- */
+.cta {
+  margin-top: 130px;
+  padding: 58px 0px 8px;
+  background: #def6f5;
+}
+
+.cta-body {
+  display: flex;
+}
+
+.cta-left {
+  width: 35.9%;
+  margin-right: 410px;
+}
+
+.cta-right a.btn {
+  margin-top: 38px;
+  background: #2ac9bf;
 }
