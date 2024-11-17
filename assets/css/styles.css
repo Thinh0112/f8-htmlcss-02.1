@@ -647,6 +647,10 @@ a {
   line-height: normal;
 }
 
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
 .footer ul li a i {
   width: 20px;
   height: 20px;
