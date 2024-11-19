@@ -82,6 +82,21 @@ a {
   margin-bottom: 80px;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-4 {
+  --line-clamp: 4;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
 /* ----------Header---------- */
 .header {
   padding-top: 52px;
@@ -164,7 +179,6 @@ a {
 .hero-left .desc {
   margin-top: 46px;
   width: 374px;
-  word-break: break-word;
 }
 
 .hero-left .cta-group {
